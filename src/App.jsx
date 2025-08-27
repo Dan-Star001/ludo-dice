@@ -5,11 +5,8 @@ const App = () => {
   const [secondDice, setsecondDice] = useState(1);
 
   const rollDice = () => {
-    let randomNumber = Math.floor(Math.random() * 6) + 1;
-    setfirstDice(randomNumber)
-
-    let randomNumber1 = Math.floor(Math.random() * 6) + 1;
-    setsecondDice(randomNumber1)
+    setfirstDice(Math.floor(Math.random() * 6) + 1)
+    setsecondDice(Math.floor(Math.random() * 6) + 1)
 
   }
 
